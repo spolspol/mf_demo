@@ -20,7 +20,7 @@ resource "aws_iam_user" "user" {
   name = "${element(var.users, count.index/local.count_environments)}-${element(var.environments, count.index)}"
 
   tags = {
-    tag-key = "${element(var.users, count.index/local.count_environments)}-${element(var.environments, count.index)}"
+    environment = "${element(var.environments, count.index)}"
   }
 }
 
