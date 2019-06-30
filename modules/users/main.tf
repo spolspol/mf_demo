@@ -1,6 +1,6 @@
 /*
     module:       users
-    description:  creates users in AWS for each environment: ``*($USERNAME-$ENV)``
+    description:  creates users from a list in AWS for list of environments
 */
 
 #   set counters for iteration using local variables
