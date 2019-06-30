@@ -2,6 +2,7 @@
     terraform stack 
 */
 
+
 #   modules
 
 module "users" {
@@ -9,6 +10,9 @@ module "users" {
   users         = "${var.list_of_users}"
   environments  = "${var.list_of_environments}"
 }
+
+
+#   outputs
 
 output "credentials" {
   value = "${

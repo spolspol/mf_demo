@@ -10,6 +10,7 @@ locals {
   count_joint			    = "${local.count_environments * local.count_users}"
 }
 
+
 #   create resoucres
 
 resource "aws_iam_user" "user" {
@@ -27,6 +28,7 @@ resource "aws_iam_access_key" "key" {
 
   user = "${element(aws_iam_user.user.*.name, count.index)}"
 }
+
 
 #   outputs
 
