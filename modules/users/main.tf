@@ -27,3 +27,17 @@ resource "aws_iam_access_key" "key" {
 
   user = "${element(aws_iam_user.user.*.name, count.index)}"
 }
+
+#   outputs
+
+output "username" {
+  value = "${aws_iam_user.user.*.name}"
+}
+
+output "access_key" {
+  value = "${aws_iam_access_key.key.*.id}"
+}
+
+output "secret_access_key" {
+  value = "${aws_iam_access_key.key.*.secret}"
+}
