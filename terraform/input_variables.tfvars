@@ -1,5 +1,5 @@
 /*
-	input variables
+	values for input variables
 */
 
 list_of_environments 	= [
