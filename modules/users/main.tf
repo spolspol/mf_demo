@@ -1,5 +1,6 @@
 /*
-    module resources
+    module:       users
+    description:  creates users in AWS for each environment: ``*($USERNAME-$ENV)``
 */
 
 #   set counters for iteration using local variables
