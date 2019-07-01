@@ -19,6 +19,8 @@ resource "aws_iam_user" "user" {
   
   name = "${element(var.users, count.index/local.count_environments)}-${element(var.environments, count.index)}"
 
+  path = "/${element(var.environments, count.index)}/"
+
   tags = {
     environment = "${element(var.environments, count.index)}"
   }
