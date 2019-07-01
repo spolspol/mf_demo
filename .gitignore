@@ -7,3 +7,4 @@ errored.tfstate
 *.envrc
 *.json
 *.kubeconfig
+*.plan

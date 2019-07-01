@@ -12,6 +12,11 @@
 ```git clone https://github.com/spolspol/mf_demo```
 
 * Run terraform \
+`# enter terraform folder`
 `cd mf_demo/terraform` \
+`# initialise terraform` \
 `terraform init` \
-`terraform apply -var-file=input_variables.tfvars`
+`# save terraform plan into a file` \
+`terraform plan -var-file=input_variables.tfvars -out terraform.plan` \
+`# apply terraform from plan file` \
+`terraform apply terraform.plan`
