@@ -12,7 +12,7 @@
 ```git clone https://github.com/spolspol/mf_demo```
 
 * Run terraform \
-`# enter terraform folder`
+`# enter terraform folder` \
 `cd mf_demo/terraform` \
 `# initialise terraform` \
 `terraform init` \
