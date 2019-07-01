@@ -6,9 +6,9 @@
 #   set counters for iteration using local variables
 
 locals {
-  count_environments  = "${length(var.environments)}"
-  count_users         = "${length(var.users)}"
-  count_joint			    = "${local.count_environments * local.count_users}"
+  count_environments    = "${length(var.environments)}"
+  count_users           = "${length(var.users)}"
+  count_joint           = "${local.count_environments * local.count_users}"
 }
 
 
